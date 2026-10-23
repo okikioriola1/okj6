@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Adventure Travel Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React learning project for an adventure travel landing page, with reusable navigation, destination cards, a footer, and separate service, product, and sign-up routes.
 
-## Available Scripts
+The repository retains its original name, `okj6`; this README describes the project behind that name.
 
-In the project directory, you can run:
+## What is implemented
 
-### `npm start`
+- Landing page hero and destination card layout.
+- Reusable buttons, navigation, cards, and footer components.
+- Client-side routes at `/`, `/services`, `/products`, and `/sign-up`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The service, product, and sign-up pages are placeholders. The hero references `/videos/video-1.mp4`, but that file is not included. There is no booking or account backend.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Stack
 
-### `npm test`
+React 17, JavaScript, CSS, React Router 5, and Create React App (`react-scripts` 4).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Run locally
 
-### `npm run build`
+```bash
+git clone https://github.com/okikioriola1/okj6.git
+cd okj6
+npm ci
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Open the URL printed by the development server. No environment variables are required. This legacy build setup does not pin a Node.js version; compatibility with current Node/npm releases has not been verified.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Scripts
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `npm start`: development server.
+- `npm run build`: production bundle in `build/`.
+- `npm test`: inherited test runner; no test files are currently included.
 
-### `npm run eject`
+## Code map
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- `src/App.js`: routes.
+- `src/components/pages/`: route components.
+- `src/components/`: navigation, hero, cards, buttons, and footer.
+- `src/images/`: destination and page imagery.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Next improvements
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Replace the missing video with an appropriately licensed asset or a static hero, complete the placeholder pages, modernize the build tooling, and add navigation and sign-up tests as those flows are completed.
