@@ -1,4 +1,4 @@
-# Adventure Travel Website
+# Roamora
 
 A React learning project for an adventure travel landing page, with reusable navigation, destination cards, a footer, and separate service, product, and sign-up routes.
 
@@ -17,8 +17,8 @@ React 17, JavaScript, CSS, React Router 5, and Create React App (`react-scripts`
 ## Run locally
 
 ```bash
-git clone https://github.com/okikioriola1/adventure-travel-website.git
-cd adventure-travel-website
+git clone https://github.com/okikioriola1/roamora.git
+cd roamora
 npm ci
 npm start
 ```
